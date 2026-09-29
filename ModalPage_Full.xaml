@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiShellTitleView2.ModalPage_Full"
+             Title="ModalPage_Full"
+             Shell.PresentationMode="Modal">
+    <VerticalStackLayout>
+        <Border BackgroundColor="#F7E6F0" StrokeThickness="0" HeightRequest="40">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <Button Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Done"
+                        Padding="10,0,1,0" BackgroundColor="Transparent" TextColor="Blue"
+                        Clicked="CancelButton_Clicked"/>
+                <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Text="Modal Page"
+                       HorizontalTextAlignment="Center" Padding="0,10" BackgroundColor="Transparent" TextColor="Black"/>
+                <Button Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" Text="Cancel"
+                        Padding="1,0,10,0" BackgroundColor="Transparent" TextColor="Blue"
+                        Clicked="CancelButton_Clicked"/>
+            </Grid>
+        </Border>
+        <Label 
+            Text="Modal Page (Full Screen)"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="0,20"/>
+    </VerticalStackLayout>
+</ContentPage>
